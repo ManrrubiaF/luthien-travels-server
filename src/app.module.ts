@@ -21,7 +21,7 @@ import { CommentsModule } from './comments/comments.module';
       ssl: {
         rejectUnauthorized: false, 
       },
-      synchronize: false,
+      synchronize: true,
       dropSchema: false,
 
 
