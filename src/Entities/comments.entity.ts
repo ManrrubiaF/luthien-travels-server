@@ -1,4 +1,4 @@
-import { Entity, Column, PrimaryGeneratedColumn } from 'typeorm';
+import { Entity, Column, PrimaryGeneratedColumn, CreateDateColumn } from 'typeorm';
 
 @Entity()
 export class comments {
@@ -8,4 +8,6 @@ export class comments {
     name:string;
     @Column('text')
     text: string;
+    @CreateDateColumn({ type: 'timestamp' })
+    created_at: Date;
 }

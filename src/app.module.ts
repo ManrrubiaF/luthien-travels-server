@@ -19,7 +19,7 @@ import { CommentsModule } from './comments/comments.module';
       database: process.env.POSTGRES_DATABASE,
       entities: ['dist/**/*.entity{.ts,.js}'],
       ssl: {
-        rejectUnauthorized: false, 
+        rejectUnauthorized: false,        
       },
       synchronize: false,
       dropSchema: false,
